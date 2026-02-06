@@ -514,11 +514,6 @@ int CRtspSession::GetStreamID()
     return m_StreamID;
 };
 
-void CRtspSession::broadCastCurrentFrame(int msec)
-{
-	m_Streamer->streamImage(msec);
-}
-
 /**
    Read from our socket, parsing commands as possible.
  */
