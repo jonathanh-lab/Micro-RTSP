@@ -514,7 +514,7 @@ int CRtspSession::GetStreamID()
     return m_StreamID;
 };
 
-void CRtspSession::broadcastCurrentFrame(int msec)
+void CRtspSession::broadCastCurrentFrame(int msec)
 {
 	m_Streamer->streamImage(msec);
 }
