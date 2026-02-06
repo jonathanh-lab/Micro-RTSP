@@ -27,6 +27,7 @@ public:
 
     RTSP_CMD_TYPES Handle_RtspRequest( char *aRequest, unsigned aRequestSize );
     int            GetStreamID();
+		void broadCastCurrentFrame(int msec);
 
     /**
        Read from our socket, parsing commands as possible.
